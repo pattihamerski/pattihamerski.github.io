@@ -1,5 +1,64 @@
 baseURL: "https://pattihamerski.github.io/"
 languageCode: en-us
-title: My New Hugo Site
+title: Patti Hamerski
 theme: barks
 publishDir: docs 
+pluralizelisttitles: false
+
+params:
+  head:
+    author: Patti Hamerski
+    custom_css: <url_to_custom_css_file>
+    description: 'Hi, I''m Patti, Welcome!'
+    keywords:
+      - some
+      - keywords
+      - to
+      - describe
+      - this
+  navigation:
+    show_navigation: true
+  footer:
+    show_footer: true
+  typography:
+    title_font: Bree Serif
+    body_font: Source Sans Pro
+  colors:
+    theme_color: '#333333'
+    background_color: '#fcfbf9'
+    text_color: '#333333'
+    link_color: '#60c17d'
+  social:
+    email:
+      name: E-Mail
+      class: fas fa-envelope
+      url: 'mailto:<your_name>@<your_institution>.com'
+      weight: 1
+    github:
+      name: GitHub
+      class: fab fa-github
+      url: 'https://github.com/<your_github_username>'
+      weight: 2
+    google_scholar:
+      name: Google Scholar
+      class: ai ai-google-scholar-square
+      url: 'https://scholar.google.com/citations?user=<your_user_id>'
+      weight: 3
+      
+menu:
+  main:
+    - name: Current Projects
+      pageRef: /projects
+      weight: 1
+    - name: Research
+      pageRef: /research
+      weight: 2
+    - name: Teaching
+      pageRef: /teaching
+      weight: 3
+    - name: Bio
+      pageRef: /bio
+      weight: 4
+    - name: CV
+      pageRef: /cv
+      weight: 5
